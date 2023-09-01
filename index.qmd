@@ -1,0 +1,17 @@
+---
+title: "jhanvi-kannan.github.io"
+---
+
+I am a graduate student pursuing a master's in Social Data Analytics & Research at the University of Texas at Dallas.
+
+### Contact Me
+[jhanvi.kannan@utdallas.edu](mailto:jhanvi.kannan@utdallas.edu)
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r}
+1 + 1
+```
