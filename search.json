@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "jhanvi-kannan.github.io",
     "section": "",
-    "text": "I am a graduate student pursuing a master’s in Social Data Analytics & Research at the University of Texas at Dallas.\n\nContact Me\njhanvi.kannan@utdallas.edu\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "I am a graduate student pursuing a master’s in Social Data Analytics & Research at the University of Texas at Dallas."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,19 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#jhanvi.kannanutdallas.edu",
+    "href": "index.html#jhanvi.kannanutdallas.edu",
+    "title": "jhanvi-kannan.github.io",
+    "section": "jhanvi.kannan@utdallas.edu",
+    "text": "jhanvi.kannan@utdallas.edu"
+  },
+  {
+    "objectID": "index.html#assignment-1-qualtrics-survey",
+    "href": "index.html#assignment-1-qualtrics-survey",
+    "title": "jhanvi-kannan.github.io",
+    "section": "Assignment 1: Qualtrics Survey",
+    "text": "Assignment 1: Qualtrics Survey\nLink to survey: https://utdallas.qualtrics.com/jfe/form/SV_8qYDz8fe1fd8nZQ\nSurvey Analysis:\n\nThe survey is structured to collect data and gauge responses on how frequently the sample population watch movies, and what content in movies they prefer. This is asked before addressing the demographics of the sample population.\nThe questionnaire is composed of multiple choice questions (objective questions), as well as Likert Scales questions. This is used to collect data based on the opinions of the sample population.\nThe questions are ordered by starting with a Likert Scales question, that then continues into multiple choice questions based on the opinions of the topic. The questionnaire concludes by collecting information on the sample population’s demographics.\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   }
 ]
