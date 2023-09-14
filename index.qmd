@@ -1,0 +1,27 @@
+---
+title: "jhanvi-kannan.github.io"
+---
+
+I am a graduate student pursuing a master's in Social Data Analytics & Research at the University of Texas at Dallas.
+
+### Contact Me: [jhanvi.kannan\@utdallas.edu](mailto:jhanvi.kannan@utdallas.edu)
+
+## Assignment 1: Qualtrics Survey
+
+Link to survey: <https://utdallas.qualtrics.com/jfe/form/SV_8qYDz8fe1fd8nZQ>
+
+Survey Analysis:
+
+-   The survey is structured linearly to collect data and gauge responses on how frequently the sample population watch movies, and what content in movies they prefer. This is asked before addressing the demographics of the sample population.
+
+-   The questionnaire is composed of multiple choice questions (objective questions), as well as Likert Scales questions. This is used to collect data based on the opinions of the sample population.
+
+-   The questions are ordered by starting with a Likert Scales question, that then continues into multiple choice questions based on the opinions of the topic. The questionnaire concludes by collecting information on the sample population's demographics.
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r}
+1 + 1
+```
