@@ -114,6 +114,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#biden-xi-summit" id="toc-biden-xi-summit" class="nav-link active" data-scroll-target="#biden-xi-summit">Biden-Xi Summit</a></li>
   <li><a href="#u.s.-presidential-inaugural-speeches" id="toc-u.s.-presidential-inaugural-speeches" class="nav-link" data-scroll-target="#u.s.-presidential-inaugural-speeches">U.S. Presidential Inaugural Speeches</a></li>
+  <li><a href="#what-is-wordfish" id="toc-what-is-wordfish" class="nav-link" data-scroll-target="#what-is-wordfish">What is Wordfish?</a></li>
   </ul>
 </nav>
     </div>
@@ -143,25 +144,25 @@ ul.task-list li input[type="checkbox"] {
 <p>We used the provided R code and the Quanteda package to perform a text analysis on Twitter data regarding the Biden-Xi Summit. The following is what was identified from the analysis:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.47.16 PM.png" class="img-fluid figure-img" width="413"></p>
+<p><img src="images/Screenshot 2023-10-10 at 1.47.16 PM.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>This line of code helps provide insight of the document terms in the data matrix.</p>
+<p>This line of code (head(tweet_dfm)) helps provide insight of the document terms in the data matrix.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Screenshot 2023-10-10 at 1.48.09 PM.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>This line of code extracts the top 10 frequently used hashtags in the data matrix. As you can see, these hashtags are generically focused on the countries and presidents that the summit revolves around, but also touches on some global issues, such as COVID-19, drug usage, and the Uyghur Genocide.</p>
+<p>This line of code (head(toptag, 10)) extracts the top 10 frequently used hashtags in the data matrix. As you can see, these hashtags are generically focused on the countries and presidents that the summit revolves around, but also touches on some global issues, such as COVID-19, drug usage, and the Uyghur Genocide.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Screenshot 2023-10-10 at 1.48.58 PM.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>These lines of code explores the relationship between the hashtags, and how they are used together. This image shows the analysis on the first few rows of hashtags, and how they correspond together.</p>
+<p>These lines of code (head(tag_fcm)) explores the relationship between the hashtags, and how they are used together. This image shows the analysis on the first few rows of hashtags, and how they correspond together.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.49.34 PM.png" class="img-fluid figure-img" width="391"></p>
+<p><img src="images/Screenshot 2023-10-10 at 1.49.34 PM.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p>This network plot shows visually the relationship between the hashtags, and how they correspond with each other.</p>
@@ -170,10 +171,10 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/Screenshot 2023-10-10 at 1.50.15 PM.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>This line of code extracts the top 20 frequent Twitter usernames found in the data matrix.</p>
+<p>This line of code (head(topuser, 20)) extracts the top 20 frequent Twitter usernames found in the data matrix.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.50.56 PM.png" class="img-fluid figure-img" width="364"></p>
+<p><img src="images/Screenshot 2023-10-10 at 1.50.56 PM.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p>This image shows a network plot of a subset of Twitter usernames that were pulled from the data matrix, to show the visual relationship between usernames and their frequency of co-occurence in the matrix.</p>
@@ -183,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
 <p>To analyze Presidential Inaugural Speeches, I used the Quanteda package in R Studio to generate visualizations. The following is what I identified from my analysis:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.51.43 PM.png" class="img-fluid figure-img" width="337"></p>
+<p><img src="images/Screenshot 2023-10-10 at 1.51.43 PM.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p>To retrieve this image, we used the code ’kwic(tokens(data_corpus_inaugural_subset), pattern = “american”) %&gt;%</p>
@@ -191,10 +192,14 @@ ul.task-list li input[type="checkbox"] {
 <p>By using this code, we perform a keyword-in-context analysis and specifically search for the word “american” in the data matrix. It then generates the visualization so we can see the frequency in which the term “american” was used in each president’s inaugural speeches.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.52.27 PM.png" class="img-fluid figure-img" width="336"></p>
+<p><img src="images/Screenshot 2023-10-10 at 1.52.27 PM.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p>We use a similar code to derive this visualization, except we add in the functions to generate for the keywords “people” and “communist” as well. This visualization shows us how frequently each word was used in each president’s inaugural addresses, and how they compare to each of the other words as well.</p>
+</section>
+<section id="what-is-wordfish" class="level1">
+<h1>What is Wordfish?</h1>
+<p>Wordfish is a Quanteda Package function used in R Studio to analyze the relationship between words in documents. It is often used for text scaling, and will show the associated strength of each word within a document. To use this function, use ‘textstat_wordfish()’.</p>
 
 
 </section>
