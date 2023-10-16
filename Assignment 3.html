@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -146,37 +180,37 @@ ul.task-list li input[type="checkbox"] {
 <p>This line of code (head(tweet_dfm)) helps provide insight of the document terms in the data matrix.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.47.16 PM-01.png" class="img-fluid figure-img" width="507"></p>
+<p><img src="images/picture1.png" class="img-fluid figure-img" width="581"></p>
 </figure>
 </div>
 <p>This line of code (head(toptag, 10)) extracts the top 10 frequently used hashtags in the data matrix. As you can see, these hashtags are generically focused on the countries and presidents that the summit revolves around, but also touches on some global issues, such as COVID-19, drug usage, and the Uyghur Genocide.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.48.09 PM-01.png" class="img-fluid figure-img" width="580"></p>
+<p><img src="images/picture2.png" class="img-fluid figure-img" width="652"></p>
 </figure>
 </div>
 <p>These lines of code (head(tag_fcm)) explores the relationship between the hashtags, and how they are used together. This image shows the analysis on the first few rows of hashtags, and how they correspond together.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.48.58 PM-01.png" class="img-fluid figure-img" width="613"></p>
+<p><img src="images/picture3.png" class="img-fluid figure-img" width="685"></p>
 </figure>
 </div>
 <p>This network plot shows visually the relationship between the hashtags, and how they correspond with each other.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.49.34 PM-01.png" class="img-fluid figure-img" width="403"></p>
+<p><img src="images/picture4.png" width="303" height="240" class="figure-img"></p>
 </figure>
 </div>
 <p>This line of code (head(topuser, 20)) extracts the top 20 frequent Twitter usernames found in the data matrix.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.50.15 PM-01.png" class="img-fluid figure-img" width="540"></p>
+<p><img src="images/picture5.png" class="img-fluid figure-img" width="574"></p>
 </figure>
 </div>
 <p>This image shows a network plot of a subset of Twitter usernames that were pulled from the data matrix, to show the visual relationship between usernames and their frequency of co-occurence in the matrix.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.50.56 PM-01.png" class="img-fluid figure-img" width="366"></p>
+<p><img src="images/picture6.png" class="img-fluid figure-img" width="341"></p>
 </figure>
 </div>
 </section>
@@ -185,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 <p>To analyze Presidential Inaugural Speeches, I used the Quanteda package in R Studio to generate visualizations. The following is what I identified from my analysis:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.51.43 PM-01.png" class="img-fluid figure-img" width="272"></p>
+<p><img src="images/picture7.png" class="img-fluid figure-img" width="399"></p>
 </figure>
 </div>
 <p>To retrieve this image, we used the code ’kwic(tokens(data_corpus_inaugural_subset), pattern = “american”) %&gt;%</p>
@@ -193,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
 <p>By using this code, we perform a keyword-in-context analysis and specifically search for the word “american” in the data matrix. It then generates the visualization so we can see the frequency in which the term “american” was used in each president’s inaugural speeches.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2023-10-10 at 1.52.27 PM-01.png" class="img-fluid figure-img" width="298"></p>
+<p><img src="images/picture8.png" class="img-fluid figure-img" width="403"></p>
 </figure>
 </div>
 <p>We use a similar code to derive this visualization, except we add in the functions to generate for the keywords “people” and “communist” as well. This visualization shows us how frequently each word was used in each president’s inaugural addresses, and how they compare to each of the other words as well.</p>
@@ -202,6 +236,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-is-wordfish" class="level1">
 <h1>What is Wordfish?</h1>
 <p>Wordfish is a Quanteda Package function used in R Studio to analyze the relationship between words in documents. It is often used for text scaling, and will show the associated strength of each word within a document. To use this function, use ‘textstat_wordfish()’.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
 
 
 </section>
