@@ -7,10 +7,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - Assignment 2.qmd
-      - Assignment 3.qmd
-      - Assignment 6.qmd
+      - href: about.qmd
+      - href: Assignment 2.qmd
+      - href: Assignment 3.qmd
+      - href: Assignment 6.qmd
 
 format:
   html:
