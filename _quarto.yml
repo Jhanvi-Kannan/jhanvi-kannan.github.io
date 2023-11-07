@@ -2,18 +2,14 @@ website:
   title: "Jhanvi Kannan"
   navbar:
     left:
-      - text: Home
-        href: index.qmd
+      - href: index.qmd
+        text: Home
       - text: EPPS 6302 Assignments
         menu:
-          - href: about.qmd
-            text: Assignment 1
-          - href: Assignment 2.qmd
-            text: Assignment 2
-          - href: Assignment 3.qmd
-            text: Assignment 3
-          - href: Assignment 6.qmd
-            text: Assignment 6
+          - about.qmd
+          - Assignment 2.qmd
+          - Assignment 3.qmd
+          - Assignment 6.qmd
 
 format:
   html:
