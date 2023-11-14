@@ -10,6 +10,7 @@ website:
           - Assignment 2.qmd
           - Assignment 3.qmd
           - Assignment 6.qmd
+          - Assignment 7.qmd
 
 format:
   html:
