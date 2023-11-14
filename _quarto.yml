@@ -4,13 +4,16 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: EPPS 6302 Assignments
-        menu:
-          - about.qmd
-          - Assignment 2.qmd
-          - Assignment 3.qmd
-          - Assignment 6.qmd
-          - Assignment 7.qmd
+      - href: about.qmd
+        text: Assignment 1
+      - href: Assignment 2.qmd
+        text: Assignment 2
+      - href: Assignment 3.qmd
+        text: Assignment 3
+      - href: Assignment 6.qmd
+        text: Assignment 6
+      - href: Assignment 7.qmd
+        text: Assignment 7
 
 format:
   html:
@@ -19,3 +22,4 @@ format:
     toc: true
 
 editor: visual
+
