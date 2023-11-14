@@ -61,5 +61,19 @@
     "title": "Assignment 6: Webscraping",
     "section": "",
     "text": "Next, we will conduct a similar analysis on Winston Churchill’s speech “The Finest Hour”. We will use the following full script to analyze the text.\n\n\nThe Word Cloud is presented below:\n\n\n\n\n\nHere we can see from our text analysis that words such as “war”, “france” and “french”, and “great” are very frequent in the speech."
+  },
+  {
+  "objectID": "Assignment 7.html",
+  "href": "Assignment 7.html",
+  "title": "Assignment 7: Gov. Data & Parallel Processing",
+  "section": "",
+  "text": "# Gov. Data & Parallel Processing
+
+  With the R Scripts in govdata01.r and parallel01.r, we are attempting to download data sets from government info and clean the variables, exporting them out into individual data sets in PDF format. Unfortunately, however, my script repeatedly failed to download the PDF's of the government info data, as R kept informing me it could not read the taable due to there being more columns than column names.
+  
+  ![](images/govdata1.png){fig-align="center" width="470"}
+  
+  However, I attempted the given exercise, which was to process data for "118th Congress Congressional Hearings in Committee on Foreign Affairs?" but a similar problem persisted. Due to this, I was unable to run a parallel computation using the parallel01.r script.
+  "
   }
 ]
