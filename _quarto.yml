@@ -1,17 +1,20 @@
+project:
+  type: website
 website:
   title: "Jhanvi Kannan"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - CSV.qmd
       - text: Assignments
         menu: 
-          - about.qmd
-          - Assignment 2.qmd
-          - Assignment 3.qmd
-          - Assignment 6.qmd
-          - Assignment 7.qmd
-          - Assignment 8.qmd
+          - Assignment1.qmd
+          - Assignment2.qmd
+          - Assignment3.qmd
+          - Assignment6.qmd
+          - Assignment7.qmd
+          - Assignment8.qmd
        
 format:
   html:

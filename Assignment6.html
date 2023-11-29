@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jhanvi Kannan - M.S. Student in Social Data Analytics &amp; Research at the University of Texas at Dallas.</title>
+<title>Jhanvi Kannan - Assignment 6: Webscraping</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,22 +116,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./CSV.html" rel="" target="">
- <span class="menu-text">csv</span></a>
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">Assignment 1: Qualtrics Survey</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Assignments</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
-        <li>
-    <a class="dropdown-item" href="./Assignment1.html" rel="" target="">
- <span class="dropdown-text">Assignment 1: Qualtrics Survey</span></a>
-  </li>  
         <li>
     <a class="dropdown-item" href="./Assignment2.html" rel="" target="">
  <span class="dropdown-text">Assignment 2: Google Trends Data</span></a>
@@ -166,14 +162,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#textmining01.r" id="toc-textmining01.r" class="nav-link active" data-scroll-target="#textmining01.r">textmining01.r</a>
+  <ul class="collapse">
+  <li><a href="#their-finest-hour--winston-churchill" id="toc-their-finest-hour--winston-churchill" class="nav-link" data-scroll-target="#their-finest-hour--winston-churchill">Their Finest Hour- Winston Churchill</a></li>
+  </ul></li>
+  <li><a href="#rvest01.r" id="toc-rvest01.r" class="nav-link" data-scroll-target="#rvest01.r">rvest01.r</a></li>
+  <li><a href="#rvest02.r" id="toc-rvest02.r" class="nav-link" data-scroll-target="#rvest02.r">rvest02.r</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">M.S. Student in Social Data Analytics &amp; Research at the University of Texas at Dallas.</h1>
+<h1 class="title">Assignment 6: Webscraping</h1>
 </div>
 
 
@@ -188,16 +195,58 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<section id="textmining01.r" class="level1">
+<h1>textmining01.r</h1>
+<p>The textmining01.r code is a script for performing text mining and generating a word cloud from downloaded text data regarding Martin Luther King Jr.’s “I have a Dream” speech. The script downloads data using the “htmlTreeParse” function and stores it as a variable. The text is then pre-processed and vectorized, with the text being converted to all lower case, number and punctuation stripped away, and a matrix formed to represent the frequencies. The matrix is shown below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_site/images/gradpicture.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/textmatrix.png" class="img-fluid figure-img" width="204"></p>
 </figure>
 </div>
-<p>Hello! My name is Jhanvi Kannan, and I graduated from the University of Texas at Dallas in May 2023 with my Bachelor’s in Science in Business Administration, with a concentration in Innovation &amp; Entrepreneurship. During my undergrad degree, I focused on many different elements of being an entrepreneur, such as sales and marketing, as well as testing the viability of new products and the estimated demand for it in a market.</p>
-<p>With my masters degree, I am hoping to fine tune my research skills and use data analysis to help improve my abilities to be a great entrepreneur. Using this masters, I would be well equipped to research the demand of new technology needed in a community, and help bring that technology forth. I aspire to help push the world to grow in a well-mannered and ethical way by focusing on what people need to make their lives better in a day-to-day environment.</p>
-<p><a href="https://cometmail-my.sharepoint.com/:b:/g/personal/jxk180024_utdallas_edu/EbxpQcER07pBtyvEtM_XMJ0By_9s6xQ_8CgahGhgSn-Rqg?e=yXBktP">Click here to view my resumé</a></p>
-<p><a href="https://docs.google.com/presentation/d/1ne9YgNo_EEak1BLx73KkbKiSptFNyadWkQqTxzhgzLo/edit?usp=sharing">Click here to view Project Proposal</a></p>
-<p>Contact Me: jhanvi.kannan@utdallas.edu</p>
+<p>The “wordcounts” variable is then used to order these frequencies in descending order, shown below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wordcountmatrix.png" class="img-fluid figure-img" width="334"></p>
+</figure>
+</div>
+<p>With this, we can then formulate Word Clouds with our processed text data. The larger the word is presented in the Word Cloud, the more frequent it is presented in the speech.</p>
+<p><img src="images/blackandwhitecloud-01.png" class="img-fluid" width="230"> <img src="images/mlkcolorcloud.png" width="230" height="194"></p>
+<section id="their-finest-hour--winston-churchill" class="level2">
+<h2 class="anchored" data-anchor-id="their-finest-hour--winston-churchill">Their Finest Hour- Winston Churchill</h2>
+<p>Next, we will conduct a similar analysis on Winston Churchill’s speech “The Finest Hour”. We will use the following full script to analyze the text.</p>
+<p><img src="images/churchhillscript1.png" class="img-fluid"></p>
+<p><img src="images/churchhillscript2.png" class="img-fluid"></p>
+<p>The Word Cloud is presented below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/churchhillcolorcloud.png" class="img-fluid figure-img" width="259"></p>
+</figure>
+</div>
+<p>Here we can see from our text analysis that words such as “war”, “france” and “french”, and “great” are very frequent in the speech.</p>
+</section>
+</section>
+<section id="rvest01.r" class="level1">
+<h1>rvest01.r</h1>
+<p>This script analyzes text from a Wikipedia page, and uses the package “rvest” for web scraping.</p>
+<p>It uses “read_html” to read the HTML code and stores it as a variable under the name “wikiforreserve”. The class is then checked to make sure everything is processed and stored correctly.</p>
+<p>The script then uses XPATH to extract data from the HTML code and stores the data under the “foreignreserve” variable. The columns are then renamed in the data frame, and displayed. The first 10 entries are shown below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/columnnames.png" class="img-fluid figure-img" width="533"></p>
+</figure>
+</div>
+<p>The variable “rank” in this script is used to represent the ranks of the countries in the table, such as 1st, 2nd, or 3rd. The variable “Date” represents dates commonly used the in the data frame. We finally use the “stringr” package to clean up the “Date” variable and save the cleaned data frame as its own CSV file titled “fores.csv”.</p>
+</section>
+<section id="rvest02.r" class="level1">
+<h1>rvest02.r</h1>
+<p>This R script scrapes data from an IMDb webpage and splits it into two data frames, one for ranking data and one for title data. The script uses the “rvest” package for web scraping.</p>
+<p>It uses “read_html” to scrape an IMDb webpage consisting of data from January 1, 2022 to January 1, 2023. This information is then stored in the variable “imdb2022”.</p>
+<p>The data is then extracted as rank data and title data using the “html_nodes”, which pulls information from the IMDb page. The script then displays the first 20 entries in the Title Data, which is presented below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/headrankdata.png" class="img-fluid figure-img" width="452"></p>
+</figure>
+</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -206,6 +255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
