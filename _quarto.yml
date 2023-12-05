@@ -7,6 +7,7 @@ website:
       - href: index.qmd
         text: Home
       - CSV.qmd
+      - epps6313.qmd
       - text: Assignments
         menu: 
           - Assignment1.qmd
