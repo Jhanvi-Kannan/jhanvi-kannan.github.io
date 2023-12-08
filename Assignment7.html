@@ -128,10 +128,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">EPPS6313: Research Paper</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Assignments</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-epps6302-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">EPPS6302 Assignments</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-epps6302-assignments">    
         <li>
     <a class="dropdown-item" href="./Assignment1.html" rel="" target="">
  <span class="dropdown-text">Assignment 1: Qualtrics Survey</span></a>
@@ -156,6 +156,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="./Assignment8.html" rel="" target="">
  <span class="dropdown-text">Assignment 8: Census &amp; Spatial Data</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./epps6302.html" rel="" target="">
+ <span class="dropdown-text">EPPS 6302: Research Paper</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
@@ -174,7 +178,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#gov.-data-parallel-processing" id="toc-gov.-data-parallel-processing" class="nav-link active" data-scroll-target="#gov.-data-parallel-processing">Gov.&nbsp;Data &amp; Parallel Processing</a></li>
+  <li><a href="#gov.-data-parallel-processing" id="toc-gov.-data-parallel-processing" class="nav-link active" data-scroll-target="#gov.-data-parallel-processing">Gov.&nbsp;Data &amp; Parallel Processing</a>
+  <ul class="collapse">
+  <li><a href="#storage-planning" id="toc-storage-planning" class="nav-link" data-scroll-target="#storage-planning">Storage Planning</a></li>
+  <li><a href="#additional-storage-methods" id="toc-additional-storage-methods" class="nav-link" data-scroll-target="#additional-storage-methods">Additional Storage Methods</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -207,6 +215,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <p>However, I attempted the given exercise, which was to process data for “118th Congress Congressional Hearings in Committee on Foreign Affairs?” but a similar problem persisted. Due to this, I was unable to run a parallel computation using the parallel01.r script.</p>
+<section id="storage-planning" class="level3">
+<h3 class="anchored" data-anchor-id="storage-planning">Storage Planning</h3>
+<p>Tools like “tic tac” are crucial when dealing with mass downloads of data, as this tool helps scale data to prevent the overwhelming responses that comes with the downloading. Effective storage planning is important to see success in your code, as otherwise the download could occupy your entire hard drive. It’s also important to keep files organized within your hard drive to ensure easy access to locate the downloaded files.</p>
+</section>
+<section id="additional-storage-methods" class="level3">
+<h3 class="anchored" data-anchor-id="additional-storage-methods">Additional Storage Methods</h3>
+<p><strong>Arrow:</strong> Arrow is a columnar, in-memory data format that facilitates fast analytics on large datasets. In R, the Arrow package provides an interface for reading and writing Arrow data. With efficient memory utilization and support for various data types, Arrow enables seamless data interchange between different systems, making it an excellent choice for high-performance computing tasks.</p>
+<p><strong>Feather:</strong> Feather is a binary columnar data format designed for optimal performance and compatibility. In R, the feather package allows users to read and write data in the Feather format. Feather excels in terms of speed and efficiency, making it suitable for scenarios where quick and reliable data exchange is crucial. Its simplicity and cross-language support make it an attractive option for data scientists working on diverse projects.</p>
+<p><strong>Parquet:</strong> Parquet is a columnar storage file format that is highly optimized for use with big data processing frameworks. In R, the parquet package facilitates the reading and writing of data in the Parquet format. Parquet is known for its compression capabilities and schema evolution support, making it well-suited for data-intensive applications. Its compatibility with various programming languages and big data tools enhances its versatility in large-scale data processing workflows.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -215,6 +232,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

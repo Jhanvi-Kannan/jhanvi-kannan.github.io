@@ -128,10 +128,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">EPPS6313: Research Paper</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Assignments</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-epps6302-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">EPPS6302 Assignments</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-epps6302-assignments">    
         <li>
     <a class="dropdown-item" href="./Assignment1.html" rel="" target="">
  <span class="dropdown-text">Assignment 1: Qualtrics Survey</span></a>
@@ -156,6 +156,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="./Assignment8.html" rel="" target="">
  <span class="dropdown-text">Assignment 8: Census &amp; Spatial Data</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./epps6302.html" rel="" target="">
+ <span class="dropdown-text">EPPS 6302: Research Paper</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
@@ -174,7 +178,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link active" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#spatialdata01.r" id="toc-spatialdata01.r" class="nav-link active" data-scroll-target="#spatialdata01.r">spatialdata01.r</a>
+  <ul class="collapse">
+  <li><a href="#and-2020-data" id="toc-and-2020-data" class="nav-link" data-scroll-target="#and-2020-data">2009 and 2020 Data</a></li>
+  </ul></li>
+  <li><a href="#spatialdata02.r" id="toc-spatialdata02.r" class="nav-link" data-scroll-target="#spatialdata02.r">spatialdata02.r</a></li>
   </ul>
 </nav>
     </div>
@@ -198,9 +206,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="quarto" class="level2">
-<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<p>Quarto enables you</p>
+<section id="spatialdata01.r" class="level2">
+<h2 class="anchored" data-anchor-id="spatialdata01.r">spatialdata01.r</h2>
+<p>In the spatialdata01.r code, we explore the median age by state in 2019 using an API Census key.</p>
+<p>The code loads American Community Survey (ACS) 2019 variables using the “tidycensus::load_variables” function. It also loads ACS 2019 profile variables. The “get_acs” function retrieves ACS data for median age by state in 2019. The data is obtained at the state level, and the resulting graph is shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/medianage.png" class="img-fluid figure-img" width="231"></p>
+</figure>
+</div>
+<p>The final map visualizes the median age by state in 2019, providing a geographical representation of the data. Each state is shaded according to its median age, with the darker colors indicating a higher median age and the lighter colors indicating a lower median age.</p>
+<section id="and-2020-data" class="level3">
+<h3 class="anchored" data-anchor-id="and-2020-data">2009 and 2020 Data</h3>
+<p>The given exercise in the spatialdata01.r file was to test the code to download 2009 and 2020 data as well and compare them. Rewriting the code to download 2009 data was simple, and the visual is provided below. However, downloading the 2020 data was not possible, as an error occurred reading “Error in <code>get_acs()</code>:! The regular 1-year ACS for 2020 was not released and is not available in tidycensus.”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/2009.png" class="img-fluid figure-img" width="240"></p>
+</figure>
+</div>
+<p>At first glances, there did not seem to be many differences between the 2009 and 2019 data, but there are definitely some changes present. For example, the median age in Montana has decreased over the decade, as well as in Minnesota, Pennsylvania, North Dakota and New Jersey. Realistically, the only place we see the median age increasing in is in the U.S. Territory.</p>
+</section>
+</section>
+<section id="spatialdata02.r" class="level2">
+<h2 class="anchored" data-anchor-id="spatialdata02.r">spatialdata02.r</h2>
+<p>Next, we run the spatialdata02.r code. This code uses the “get_acs” function to retrieve income data for all tracts in Texas (state code “TX”) for the year 2020. The income data is then plotted and the result is a visualization of income estimates at the tract level for both Texas and Dallas County in the year 2020, providing insights into income distribution across geographical areas. The “tmap” and “mapview” functions enable users to create thematic maps and interactively explore the data.</p>
+<p><img src="images/texas-02.png" class="img-fluid" width="170"> <img src="images/orangegraph.png" class="img-fluid" width="176"> <img src="images/bluegraph.png" class="img-fluid" width="173"></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
