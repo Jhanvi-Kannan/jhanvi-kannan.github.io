@@ -8,7 +8,7 @@ website:
         text: Home
       - CSV.qmd
       - epps6313.qmd
-      - text: Assignments
+      - text: EPPS6302 Assignments
         menu: 
           - Assignment1.qmd
           - Assignment2.qmd
@@ -16,7 +16,11 @@ website:
           - Assignment6.qmd
           - Assignment7.qmd
           - Assignment8.qmd
-       
+          - epps6302.qmd
+      - text: EPPS6323 Assignments
+        menu:   
+          - 6323HW2.qmd
+          
 format:
   html:
     theme: cosmo
