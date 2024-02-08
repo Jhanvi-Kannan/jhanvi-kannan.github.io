@@ -20,6 +20,7 @@ website:
       - text: EPPS6323 Assignments
         menu:   
           - 6323HW2.qmd
+          - 6323HW3.qmd
           
 format:
   html:
