@@ -21,6 +21,9 @@ website:
         menu:   
           - 6323HW2.qmd
           - 6323HW3.qmd
+          - 6323HW5.qmd
+          - 6323HW6.qmd
+          - 6323HW7.qmd
           
 format:
   html:
