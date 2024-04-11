@@ -24,6 +24,7 @@ website:
           - 6323HW5.qmd
           - 6323HW6.qmd
           - 6323HW7.qmd
+          - 6323HW8.qmd
           
 format:
   html:
